@@ -10,3 +10,4 @@ fastapi==0.95.0
 anyio==3.6.2
 requests
 aiohttp==3.8.4
+httpx
