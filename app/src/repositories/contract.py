@@ -1,6 +1,8 @@
 from sqlalchemy.orm import session
-from src.tables.contract_table import ContractTable
-from src.models.contract import Contract
+from app.src.tables.contract_table import ContractTable
+from app.src.models.contract import Contract
+
+
 class ContractORM:
     def __init__(self, session: session.Session):
         self.session = session
