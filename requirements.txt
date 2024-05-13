@@ -6,7 +6,7 @@ polyfactory==2.16.0
 Faker==25.2.0
 SQLAlchemy-Utils==0.38.3
 SQLAlchemy==1.4.48
-fastapi==0.95.0
+fastapi
 anyio==3.6.2
 requests
 aiohttp==3.8.4
