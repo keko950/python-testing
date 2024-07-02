@@ -20,6 +20,12 @@ def test_fixture():
 
 
 # Custom hook
+def pytest_addoption(parser):
+    parser.addoption(
+        "--runslow", action="store_true", default=False, help="run slow tests"
+    )
+
+
 def pytest_runtest_setup(item):
     print(f"setting up {item}")
     if "slow" in item.keywords and not item.config.getoption("--runslow"):

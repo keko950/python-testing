@@ -19,6 +19,7 @@ def contract_fixture():
     )
 
 
+@pytest.mark.slow
 def test_create_contract(contract_fixture):
     orm = Mock()
     orm.insert_contract = Mock(return_value=True)
