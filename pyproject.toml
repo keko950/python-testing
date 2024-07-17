@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "python-testing"
+version = "0.1.0"
+description = ""
+authors = ["Gilberto Plaza <gilberto.plaza@shell.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydantic = "2.8.2"
+fastapi = "0.111.1"
+psycopg2-binary = "2.9.3"
+sqlalchemy = "^2.0.31"
+alembic = "^1.13.2"
+
+
+[tool.poetry.group.dev.dependencies]
+pyupgrade = "^3.16.0"
+polyfactory = "^2.16.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
